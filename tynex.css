@@ -1,0 +1,23 @@
+/* TyNEX - police Sunorium (version web)
+   Mettre TyNEX.woff2 / TyNEX.woff / TyNEX.ttf dans le meme dossier que ce fichier. */
+@font-face {
+  font-family: "TyNEX";
+  src: url("TyNEX.woff2") format("woff2"),
+       url("TyNEX.woff") format("woff"),
+       url("TyNEX.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 1 pixel de la police = font-size / 8.
+   Utilise des multiples de 8 (8, 16, 24, 32, 40, 48 px...) pour des pixels parfaitement nets. */
+.tynex {
+  font-family: "TyNEX", monospace;
+  font-size: 16px;
+  line-height: 1.25;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+  text-rendering: optimizeSpeed;
+}
